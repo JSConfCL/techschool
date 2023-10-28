@@ -19,7 +19,7 @@ Aprende a optimizar tu CV y portafolio para el sector tecnológico con retroalim
 
 El objetivo principal de este taller es que, al finalizar, los participantes tengan un CV y/o portafolio optimizado y ajustado a las necesidades y expectativas del mercado tecnológico actual.
 
-## Pre-requisitos
+## Prerrequisitos
 
 - Tener una versión actual de tu CV y/o portafolio.
 - Contar con una laptop para seguir las actividades prácticas.
