@@ -25,7 +25,8 @@ El objetivo principal de este taller es que cada participante se familiarice con
 
 En esta carpeta encontrarás archivos, guías y recursos que te guiarán a lo largo del taller. Te recomendamos descargar y revisar estos materiales previamente para maximizar tu experiencia durante la sesión.
 
-- [Presentación](./presentacion.pdf)
+- [Presentación PDF](./presentacion.pdf)
+- [Presentación Drive](https://docs.google.com/presentation/d/1Dy7KeI5iXTUTuBoeHUAevqRsPXC-WepBnyOQaDhEt-A/edit?usp=sharing)
 - [Base de datos para ejercicio final](./spotify-2023.csv)
 - [Código utilizado para ejercicio final](./ejercicio_final_taller.ipynb)
 
