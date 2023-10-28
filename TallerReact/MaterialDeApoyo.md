@@ -8,3 +8,4 @@ Durante el taller utilizaremos las siguientes herramientas para construir nuestr
 - [Material UI](https://mui.com/material-ui/getting-started/) para dar estilos a nuestra app
 - [React Router](https://reactrouter.com/en/main/start/tutorial) para crear las rutas
 - [React Lazy Load Image Component](https://www.npmjs.com/package/react-lazy-load-image-component) para hacer [carga diferida](https://css-tianguis.com/lazy-loading-o-carga-diferida-de-imagenes-como-mejorar-la-velocidad-de-nuestros-sitios/) de las imágenes
+- [Material adicional a usar durante el taller](https://alais29dev.notion.site/Escuela-de-React-Material-de-Apoyo-3dbe38f0e89143888c8252acc07d5b45?pvs=4)
