@@ -20,8 +20,6 @@ El objetivo principal es que los participantes adquieran experiencia práctica e
 - Documentación oficial de Express: https://expressjs.com/
 - Documentación oficial de MongoDB: https://docs.mongodb.com/
 
----
-
 ## ¡Diviértete intercambiando Pokémon!
 
 Gracias por participar en este taller. Espero que hayas disfrutado construyendo tu propio simulador de centro de intercambio Pokémon con Node.js.
