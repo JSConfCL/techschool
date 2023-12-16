@@ -1,0 +1,23 @@
+<div class="card" style="width: 90%; max-width: 25rem; margin: 0 auto;">
+  <div class="card-body">
+    <h5 class="card-title">{{ data?.name }}</h5>
+  </div>
+  <img [src]="data?.image" class="card-img-top" [alt]="data?.name">
+  <div class="card-body">
+    <h3>Basic information:</h3>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Number: {{ data?.id }}</p>
+    <p class="card-text">Type: {{ data?.type }}</p>
+    <p class="card-text">Weight: {{ data?.weight }} lb.</p>
+    <p class="card-text">Height: {{ data?.height }} ft.</p>
+  </div>
+  <div class="card-body">
+    <h3>Abilities:</h3>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+  </ul>
+</div>

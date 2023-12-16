@@ -1,0 +1,16 @@
+.header-poke {
+  background-color: var(--color-secondary);
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem 0;
+  }
+
+  &__subtitle {
+    font-size: 1.25rem;
+  }
+}
