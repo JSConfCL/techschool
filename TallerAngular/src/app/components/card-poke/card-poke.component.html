@@ -1,23 +1,23 @@
-<div class="card" style="width: 90%; max-width: 25rem; margin: 0 auto;">
+<div class="card card-poke">
   <div class="card-body">
-    <h5 class="card-title">{{ data?.name }}</h5>
+    <h5 class="card-title card-poke__title">{{ data?.name }}</h5>
   </div>
-  <img [src]="data?.image" class="card-img-top" [alt]="data?.name">
-  <div class="card-body">
+  <img [src]="data?.image" class="card-img-top card-poke__img" [alt]="data?.name">
+  <div class="card-body card-poke__subtitle">
     <h3>Basic information:</h3>
   </div>
   <div class="card-body">
-    <p class="card-text">Number: {{ data?.id }}</p>
-    <p class="card-text">Type: {{ data?.type }}</p>
-    <p class="card-text">Weight: {{ data?.weight }} lb.</p>
-    <p class="card-text">Height: {{ data?.height }} ft.</p>
+    <p class="card-text card-poke__text">Number: {{ data?.id }}</p>
+    <p class="card-text card-poke__text">Type: {{ data?.type }}</p>
+    <p class="card-text card-poke__text">Weight: {{ data?.weight }} lb.</p>
+    <p class="card-text card-poke__text">Height: {{ data?.height }} ft.</p>
   </div>
-  <div class="card-body">
+  <div class="card-body card-poke__subtitle">
     <h3>Abilities:</h3>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
+    <li class="list-group-item card-poke__text">An item</li>
+    <li class="list-group-item card-poke__text">A second item</li>
+    <li class="list-group-item card-poke__text">A third item</li>
   </ul>
 </div>
