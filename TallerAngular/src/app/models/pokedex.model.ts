@@ -1,9 +1,20 @@
 export interface Pokemon {
-  abilities: any[];
+  abilities: PokemonAbilities[];
   name: string;
   id: number;
-  image?: string;
+  image: string;
   type: string;
   weight: number;
   height: number;
+}
+
+export interface PokemonAbility {
+  name: string;
+  url: string;
+}
+
+export interface PokemonAbilities {
+  ability: PokemonAbility;
+  is_hidden: boolean;
+  slot: number;
 }

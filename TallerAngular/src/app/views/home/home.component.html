@@ -9,13 +9,19 @@
           <div class="input-group mb-3">
             <span class="input-group-text" id="inputGroup-sizing-default">Pokémon</span>
             <input type="text" [(ngModel)]="pokemonName" placeholder="Search a pokémon..." class="form-control">
-            <button class="btn btn-outline-secondary" type="button" (click)="searchPokemon()">Search</button>
+            <button class="btn btn-outline-secondary input-container__btn" type="button"
+              (click)="searchPokemon()">Search</button>
           </div>
         </div>
       </div>
     </div>
     <div class="col-12">
+      @if (pokemon && !loading) {
       <app-card-poke [data]="pokemon"></app-card-poke>
+      } @else if (loading) {
+      <app-loader></app-loader>
+      } @else { <app-fail-poke></app-fail-poke>
+      }
     </div>
   </div>
 </div>

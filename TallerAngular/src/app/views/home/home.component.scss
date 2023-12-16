@@ -5,6 +5,11 @@
   justify-content: center;
   padding: 2rem 0 0;
   font-size: 1.25rem;
+
+  strong {
+    font-size: 1.35rem;
+    color: var(--color-primary);
+  }
 }
 
 .input-container {
@@ -12,4 +17,17 @@
   align-items: center;
   justify-content: center;
   padding: 2rem 0;
+
+  &__btn {
+    background-color: var(--color-primary);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    text-transform: capitalize;
+
+    &:hover {
+      background-color: var(--color-secondary);
+    }
+  }
 }

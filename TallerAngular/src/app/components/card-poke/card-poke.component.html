@@ -2,22 +2,28 @@
   <div class="card-body">
     <h5 class="card-title card-poke__title">{{ data?.name }}</h5>
   </div>
+  @defer (on immediate) {
   <img [src]="data?.image" class="card-img-top card-poke__img" [alt]="data?.name">
+  } @placeholder {
+  <img width="350" height="350" src="assets/images/pokeball.png" class="card-img-top card-poke__img" alt="pokeball">}
+  <hr>
   <div class="card-body card-poke__subtitle">
     <h3>Basic information:</h3>
   </div>
   <div class="card-body">
-    <p class="card-text card-poke__text">Number: {{ data?.id }}</p>
-    <p class="card-text card-poke__text">Type: {{ data?.type }}</p>
-    <p class="card-text card-poke__text">Weight: {{ data?.weight }} lb.</p>
-    <p class="card-text card-poke__text">Height: {{ data?.height }} ft.</p>
+    <p class="card-text card-poke__text"><strong>Number:</strong> {{ data?.id }}</p>
+    <p class="card-text card-poke__text"><strong>Type:</strong> {{ data?.type }}</p>
+    <p class="card-text card-poke__text"><strong>Weight:</strong> {{ data?.weight }} lb.</p>
+    <p class="card-text card-poke__text"><strong>Height:</strong> {{ data?.height }} ft.</p>
   </div>
+  <hr>
   <div class="card-body card-poke__subtitle">
     <h3>Abilities:</h3>
   </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item card-poke__text">An item</li>
-    <li class="list-group-item card-poke__text">A second item</li>
-    <li class="list-group-item card-poke__text">A third item</li>
-  </ul>
+  <div class="d-grid col-6 mx-auto mb-5">
+    <button type="button" class="btn card-poke__btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      view abilities!
+    </button>
+    <app-modal-poke [data]="data?.abilities"></app-modal-poke>
+  </div>
 </div>

@@ -1,4 +1,4 @@
-.card-poke {
+.card-poke-fail {
   width: 90%;
   max-width: 25rem;
   margin: 0 auto 5rem;
@@ -11,34 +11,15 @@
   -ms-border-radius: .375rem;
   -o-border-radius: .375rem;
 
-  &__btn {
-    background-color: var(--color-primary);
-    border: none;
-    color: white;
-    cursor: pointer;
-    transition: all .3s ease-in-out;
-    text-transform: capitalize;
-
-    &:hover {
-      background-color: var(--color-secondary);
-    }
-  }
-
   &__img {
     padding: 3rem;
-  }
-
-  &__text {
-    text-transform: capitalize;
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
   }
 
   &__title {
-    text-transform: capitalize;
     text-align: center;
     font-size: 2rem;
-  }
-
-  &__subtitle {
-    text-transform: capitalize;
   }
 }

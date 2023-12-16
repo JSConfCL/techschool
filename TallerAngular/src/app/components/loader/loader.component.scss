@@ -1,0 +1,24 @@
+.card-poke-loading {
+  width: 100%;
+  max-width: 25rem;
+  margin: 0 auto;
+
+  &__img {
+    padding: 3rem;
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
+    animation: .5s infinite linear rotation;
+    -webkit-animation: .5s infinite linear rotation;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
