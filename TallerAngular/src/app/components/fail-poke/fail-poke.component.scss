@@ -1,0 +1,25 @@
+.card-poke-fail {
+  width: 90%;
+  max-width: 25rem;
+  margin: 0 auto 5rem;
+  box-shadow: 0 0 .9rem var(--color-secondary);
+  border: 1.5px solid var(--color-primary);
+  overflow: hidden;
+  border-radius: .375rem;
+  -webkit-border-radius: .375rem;
+  -moz-border-radius: .375rem;
+  -ms-border-radius: .375rem;
+  -o-border-radius: .375rem;
+
+  &__img {
+    padding: 3rem;
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
