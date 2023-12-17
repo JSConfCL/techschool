@@ -1,0 +1,15 @@
+{
+  "name": "tallernode",
+  "version": "1.0.0",
+  "description": "**Mentor de esta edición:** David Quezada (@DvdQzd)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
