@@ -1,17 +1,26 @@
 const express = require('express');
-const { PokemonService } = require('./services/pokemon.service.js')
+const mongoose = require('mongoose');
+const { PokemonServiceFactory } = require('./services/pokemon.service.factory.js');
+
 const app = express();
 app.use(express.json());
 
-const pokemonService = new PokemonService();
+const mongoDB = true; // cambiar a false para usar el servicio de pokemon.service.js
+
+const pokemonService = new PokemonServiceFactory().getPokemonService(mongoDB);
+
+mongoose.connect('mongodb://localhost/pokemon-db', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+})
 
 app.post('/pokemon', (req, res) => {
     const data = req.body;
     const received = pokemonService.savePokemon(data);
-    if(received){
+    if (received) {
         res.send(received)
     } else {
-        res.status(404).send({message: 'No hay pokemon disponible'})
+        res.status(404).send({ message: 'No hay pokemon disponible' })
     }
 });
 
