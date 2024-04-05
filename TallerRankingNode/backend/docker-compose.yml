@@ -1,0 +1,14 @@
+version: '3.0'
+
+services:
+  mongo_db:
+    image: mongo
+    container_name: mongo_db_ranking
+    ports:
+      - 27017:27017
+    volumes:
+      - mongoranking:/data/configdb
+      - mongoranking:/data/db
+
+volumes:
+  mongoranking: {}
